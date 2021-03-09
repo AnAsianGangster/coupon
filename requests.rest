@@ -1,2 +1,29 @@
 ###
 GET http://localhost:5000/coupon
+
+###
+POST http://localhost:5000/coupon
+Content-Type: application/json
+
+{
+    "userId": "some-user-id",
+    "amount": 3000,
+    "redeemed": false,
+    "redeemBefore": "2021-01-01"
+}
+
+###
+GET http://localhost:5000/coupon/redeemed
+
+###
+GET http://localhost:5000/coupon/unredeemed
+
+###
+PUT http://localhost:5000/coupon/ce78fecb-75d0-428c-ba10-5ae2e7b5d4ea
+
+{
+    "userId": "some-user-id",
+    "amount": 6000,
+    "redeemed": false,
+    "redeemBefore": "2021-04-01"
+}

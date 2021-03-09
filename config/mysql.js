@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 module.exports = {
-    HOST: 'localhost',
-    USER: 'root',
-    PASSWORD: 'password',
-    DB: 'emsika',
+    HOST: process.env.MYSQL_HOST,
+    USER: process.env.MYSQL_USER,
+    PASSWORD: process.env.MYSQL_PASSWORD,
+    DB: process.env.MYSQL_DB,
     dialect: 'mysql',
     pool: {
         max: 5,

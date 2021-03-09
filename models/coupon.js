@@ -2,6 +2,7 @@ module.exports = (sequelize, Sequelize) => {
     const Coupon = sequelize.define('coupon', {
         couponId: {
             type: Sequelize.STRING,
+            primaryKey: true,
         },
         userId: {
             type: Sequelize.STRING,
