@@ -19,7 +19,7 @@ require('./routes/coupon.js')(app);
 
 // simple route
 app.get('*', (req, res) => {
-    resstatus(400).send({
+    res.status(400).send({
         message: 'bad request',
     });
 });

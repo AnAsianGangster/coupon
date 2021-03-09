@@ -27,5 +27,5 @@ module.exports = (app) => {
     // Delete all Coupon
     router.delete('/', coupons.deleteAll);
 
-    app.use('/api/tutorials', router);
+    app.use('/coupon', router);
 };
